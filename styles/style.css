@@ -1,0 +1,126 @@
+body {
+  background-color: #19a2ae;
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 649px bottom 287px, left 638px top 381px;
+  font-family: "Kumbh Sans", sans-serif;
+  color: #2d3248;
+}
+
+main {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  width: 27%;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.card-body {
+  padding: 30px;
+  text-align: center;
+  margin-top: 45px;
+}
+
+.card-body .name {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 2;
+  margin-right: 6px;
+}
+
+.card-body .age {
+  font-weight: 400;
+  color: #6a6f81;
+}
+
+.card-body .city {
+  font-weight: 400;
+  color: #6a6f81;
+  font-size: 0.8125rem;
+}
+
+.card-header {
+  background-image: url("../images/bg-pattern-card.svg");
+  min-height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.card-header img {
+  border-radius: 50%;
+  margin-top: 105px;
+  position: absolute;
+  border: 6px solid #fff;
+}
+
+.card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #e2e2e2;
+  padding: 25px 46px;
+}
+
+.card-footer .stats {
+  text-align: center;
+}
+
+.card-footer .stats .val {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 2;
+}
+
+.card-footer .stats .type {
+  font-weight: 400;
+  color: #6a6f81;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 900px) {
+  .card {
+    width: 40%;
+  }
+  body {
+    background-position: right 313px bottom 303px, left 235px top 381px;
+  }
+}
+
+@media (max-width: 649px) and (min-width: 419px) {
+  .card {
+    width: 65% !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .card {
+    width: 90% !important;
+  }
+  body {
+    background-position: right 152px bottom 325px, left 118px top 310px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

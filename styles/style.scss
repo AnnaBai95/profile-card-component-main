@@ -1,0 +1,127 @@
+$dark-cyan: hsl(185, 75%, 39%);
+$dark-blue: hsl(229, 23%, 23%);
+$dark-grey: hsl(227, 10%, 46%);
+$light_grey: #e2e2e2;
+$font-main: "Kumbh Sans", sans-serif;
+$font-regular: 400;
+$font-bold: 700;
+$body-copy: 1.125rem;
+
+body {
+    background-color: $dark-cyan;
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 649px bottom 287px, left 638px top 381px;
+    font-family: $font-main;
+    color: $dark-blue;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 27%;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.card-body {
+    padding: 30px;
+    text-align: center;
+    margin-top: 45px;
+    .name {
+        font-weight: $font-bold;
+        font-size: $body-copy;
+        line-height: 2;
+        margin-right: 6px;
+    }
+    .age {
+        font-weight: $font-regular;
+        color: $dark-grey;
+    }
+    .city {
+        font-weight: $font-regular;
+        color: $dark-grey;
+        font-size: 0.8125rem;
+    }
+}
+
+.card-header {
+    background-image: url("../images/bg-pattern-card.svg");
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    img {
+        border-radius: 50%;
+        margin-top: 105px;
+        position: absolute;
+        border: 6px solid #fff;
+    }
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid $light_grey;
+    padding: 25px 46px;
+
+    .stats {
+        text-align: center;
+    }
+
+    .stats .val {
+        font-weight: $font-bold;
+        font-size: $body-copy;
+        line-height: 2;
+    }
+
+    .stats .type {
+        font-weight: $font-regular;
+        color: $dark-grey;
+        font-size: 0.75rem;
+    }
+}
+
+//MEDIA QUERIES START
+
+@media (max-width: 900px)
+{
+    .card{
+        width: 40%;
+    }
+
+    body{
+        background-position: right 313px bottom 303px, left 235px top 381px;
+    }
+
+}
+
+@media (max-width: 649px) and (min-width: 419px)
+{
+    .card{
+        width: 65% !important;
+        
+    }
+}
+
+@media (max-width: 420px)
+{
+    .card{
+        width: 90% !important;
+        
+    }
+
+    body{
+        background-position: right 152px bottom 325px, left 118px top 310px;
+    }
+
+}
+
+//MEDIA QUERIES END
